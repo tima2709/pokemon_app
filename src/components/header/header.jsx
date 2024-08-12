@@ -78,6 +78,7 @@ export default function PrimarySearchAppBar() {
     const handleClearSearch = () => {
         dispatch(setPage(1))
         dispatch(search(''))
+        dispatch(setTypesOfPokemon([]))
         setValue('')
     }
 
@@ -93,6 +94,7 @@ export default function PrimarySearchAppBar() {
                         color="inherit"
                         aria-label="open drawer"
                         sx={{mr: 2}}
+                        onClick={handleClearSearch}
                     >
                         <CatchingPokemonIcon/>
                     </IconButton>
