@@ -1,22 +1,22 @@
 .loader_wrapper {
-    width: 100%;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loader {
-    width: 100px;
-    height: 100px;
-    animation: rotation 0.3s infinite;
+  width: 100px;
+  height: 100px;
+  animation: rotation 0.3s infinite;
 }
 
 @keyframes rotation {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
